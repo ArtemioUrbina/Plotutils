@@ -253,16 +253,6 @@ extern __C_LINKAGE void free (void * ptr);
 /* Support the `bool' datatype, which is used widely in this package.     */
 /**************************************************************************/
 
-#ifndef __cplusplus
-#ifdef __STDC__
-typedef enum { false = 0, true = 1 } bool;
-#else  /* not __STDC__, do things the old-fashioned way */
-typedef int bool;
-#define false 0
-#define true 1
-#endif /* not __STDC__ */
-#endif /* not __cplusplus */
-
 /**************************************************************************/
 /* Define numerical constants (unofficial, so may not be in math.h).      */
 /**************************************************************************/

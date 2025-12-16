@@ -1,8 +1,11 @@
-This is a Mirror of The GNU plotutils package: https://ftp.gnu.org/gnu/plotutils/
+This is a Mirror of The GNU plotutils package:
+    https://ftp.gnu.org/gnu/plotutils/
 The only differences are:
-- Following the instructions from: https://stackoverflow.com/questions/39861615/plotutils-compilation-error-with-png-1-6-25-dereferencing-pointer-to-incomplete
+- Following the instructions from:
+https://stackoverflow.com/questions/39861615/
+plotutils-compilation-error-with-png-1-6-25-dereferencing-pointer-to-incomplete
 
-Edit were made to file plotutils-2.6\libplot\z_write.c and changed all occurances of:
+Edits made to file libplot\z_write.c and changed all occurances of:
 
         png_ptr->jmpbuf
 
@@ -12,6 +15,8 @@ to:
 
 The patch itself is in file: plotutils_patch.diff
 
+- Removed the define for bool to compile in modern systems, from
+lines 256 to 265 from file include/sys-defines.h
 
 Original README:
 ----------------------------------------------------------------------
